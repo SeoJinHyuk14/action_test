@@ -102,7 +102,7 @@ tasks.jacocoTestCoverageVerification {
 			limit {
 				counter = "BRANCH"
 				value = "COVEREDRATIO"
-				minimum = "0.90".toBigDecimal()	// 최소 커버리지 조절
+				minimum = "0.20".toBigDecimal()	// 최소 커버리지 조절
 			}
 		}
 	}
