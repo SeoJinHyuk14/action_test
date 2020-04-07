@@ -26,3 +26,12 @@ jobs:
     - name: jacoco
       run: ./gradlew --console verbose test jacocoTestReport jacocoTestCoverageVerification
 
+    - uses: actions/upload-artifact@v1
+      with:
+        name: jacocoReport
+        path: build/jacocoHtml
+
+    - uses: actions/upload-artifact@v1
+      with:
+        name: detektReport
+        path: build/reports
